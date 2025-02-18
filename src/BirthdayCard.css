@@ -1,0 +1,60 @@
+/* Card Container */
+.card-container {
+  width: 320px;
+  height: 384px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1; /* Ensure the card is above the blast effect */
+}
+
+/* Inner Card */
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+/* Front and Back Sides */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Front Side (Visible Initially) */
+.card-front {
+  background-image: url('C:\Projects\New folder\my-birthday-card\pic18.jpg'); /* Add the couple's picture here */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay; /* Blend the image with the background color */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
+  border: 8px solid rgb(251, 207, 232); /* Light pink border */
+}
+
+/* Back Side (Hidden Initially) */
+.card-back {
+  background-image: url('C:\Projects\New folder\my-birthday-card\pic18.jpg'); /* Add the couple's picture here */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay; /* Blend the image with the background color */
+  background-color: rgba(255, 240, 245, 0.9); /* Semi-transparent light pink overlay */
+  transform: rotateY(180deg);
+}
+
+/* Card Flip Animation */
+.card-container.card-open .card-inner {
+  transform: rotateY(180deg);
+}
+
