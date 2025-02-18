@@ -47,7 +47,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Heart } from "lucide-react";
 import JSConfetti from "js-confetti"; // Import the library
 import "./BirthdayCard.css"; // Import the CSS file
-
+import pic18 from './pic18.jpg'; 
 export default function BirthdayCard() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const confettiRef = useRef<JSConfetti | null>(null);
