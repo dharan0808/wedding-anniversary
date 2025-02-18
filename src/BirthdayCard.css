@@ -35,7 +35,7 @@
 
 /* Front Side (Visible Initially) */
 .card-front {
-  background-image: url('C:\Projects\New folder\my-birthday-card\pic18.jpg'); /* Add the couple's picture here */
+  background-image: url('New folder\my-birthday-card\src\pic18.jpg'); /* Add the couple's picture here */
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay; /* Blend the image with the background color */
@@ -45,7 +45,7 @@
 
 /* Back Side (Hidden Initially) */
 .card-back {
-  background-image: url('C:\Projects\New folder\my-birthday-card\pic18.jpg'); /* Add the couple's picture here */
+  background-image: url('New folder\my-birthday-card\src\pic18.jpg'); /* Add the couple's picture here */
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay; /* Blend the image with the background color */
